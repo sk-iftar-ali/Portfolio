@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/d7997870ff.js" crossorigin="anonymous"></script>
+    <title>Protfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>IFTAR.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#protfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+            <p>FRONTEND DEVELOPER</p>
+            <h2>Hi, I'm <span> Iftar Ali</span> <br> from India</h2>
+        </div>
+    </div>
+    </div>
+<!-------------------------------------about---------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="iftar62.jpg" height="700" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum molestias doloremque in esse ullam maxime nobis minima quod sint, impedit optio autem reprehenderit dicta soluta excepturi dolor ipsam laudantium delectus laborum voluptatem accusamus voluptates molestiae cumque. Dolorem blanditiis recusandae natus voluptatibus magni voluptas doloremque aperiam odio, iusto impedit cupiditate qui reiciendis distinctio, aspernatur enim facere excepturi delectus esse mollitia maxime saepe modi vel accusamus. Cupiditate similique hic, quos odit quod consectetur qui corporis voluptate perspiciatis itaque ducimus, dolore, nulla totam laudantium libero rerum velit eveniet nesciunt cumque? Optio eaque repudiandae nam, ipsa eos quod ipsam iure sunt omnis quaerat.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>FRONTEND DEVELOPER</span><br>Desinging Web/App interface</li>
+                            <li><span>Web Development</span><br>Desinging Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <p>Freashers</p>
+                            <!-- <li><span>FRONTEND DEVELOPER</span><br>Desinging Web/App interface</li>
+                            <li><span>Web Development</span><br>Desinging Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>frontend Training at SS Institute</li>
+                            <li><span>2022</span><br>B.tech from EGI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------services--------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo odit officiis doloremque, adipisci itaque, maiores tempore nemo amet vel culpa at fugit ad voluptates ipsa perspiciatis est, vero quia nisi laborum repellendus similique assumenda rem? Qui sapiente distinctio fugit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo odit officiis doloremque, adipisci itaque, maiores tempore nemo amet vel culpa at fugit ad voluptates ipsa perspiciatis est, vero quia nisi laborum repellendus similique assumenda rem? Qui sapiente distinctio fugit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo odit officiis doloremque, adipisci itaque, maiores tempore nemo amet vel culpa at fugit ad voluptates ipsa perspiciatis est, vero quia nisi laborum repellendus similique assumenda rem? Qui sapiente distinctio fugit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------protfolio------------------------------------------------------>
+    <div id="protfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Expense Tracker.png" width="500" height="330" alt="">
+                    <div class="layer">
+                        <h3>Expense Tracker Web-App</h3>
+                        <p> This app is help to collect your Expenses of the month and give the total amount at the end. Visit it any web browser and it</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Weather.png" width="500" height="330" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>This app show you your current Weather and Temperature of that place. Download it from play store / App store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Scorecard Cricket.png" width="500" height="330" alt="">
+                    <div class="layer">
+                        <h3>Cricket Scorecard App</h3>
+                        <p>This app is help you in cricket match to count the run,Wicket,ball and etc. Download it from playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------contact------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> skiftar2188@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 8249480642</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="SK_Iftar_Ali_CV.docx" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" placeholder=" your Name" name="name" required>
+                        <input type="email" placeholder="Enter your email" name="email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Kevin. Made with <i class="fa-solid fa-heart"></i> by IFTAR</p>
+        </div>
+    </div>
+    <script>
+        // JavaScript code
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"; // Bring the menu into view
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px"; // Hide the menu
+        }
+    </script>
+</body>
+
+</html>
